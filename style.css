@@ -30,26 +30,28 @@ header {
 }
 
 .announcement p {
-    color: #06586e; /* Light blue text color */
+    color: #044152; /* Light blue text color */
     font-size: 18px;
     margin: 10px 0;
 }
 
-.announcement form {
-    margin-top: 20px;
+.development-notice {
+    color: #61dafb; /* Light blue text color */
+    font-size: 18px;
+    text-align: center;
+    animation: glow 2s linear infinite;
 }
 
-.announcement input[type="email"] {
-    padding: 10px;
-    border: 2px solid #007bff; /* Blue border for the email input field */
-}
-
-.announcement button {
-    background-color: #d9534f; /* Red button background */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #61dafb; /* Light blue glow */
+    }
+    50% {
+        text-shadow: 0 0 20px #d9534f; /* Red glow */
+    }
+    100% {
+        text-shadow: 0 0 10px #61dafb; /* Light blue glow */
+    }
 }
 
 /* Center the "About Us" and "Contact Us" sections */
@@ -59,7 +61,7 @@ header {
     max-width: 600px; /* Set a maximum width for the sections */
 }
 
-/* Apply the violet hue to the entire page */
+/* Apply the purple hue to the entire page */
 body::before {
     content: "";
     position: fixed;
@@ -67,7 +69,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(159, 90, 253, 0.2); /* Semi-transparent violet overlay */
+    background-color: rgba(238, 130, 238, 0.3); /* Semi-transparent violet overlay */
     z-index: -1;
 }
 
